@@ -111,16 +111,5 @@ customer2 = customer("Jane", "Aothenberg", 0)
 
 
 
-print(customer1.balance, "customer1")
-customer1.deposit(50000)
-print(customer1.balance)
-
-print(customer2.balance, "customer2")
-customer2.deposit(10000)
-print(customer2.balance)
-
-customer1.transfer("00002", 5000)
-print(customer1.balance)
-print(customer2.balance)
 
 
