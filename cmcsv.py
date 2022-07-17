@@ -8,7 +8,7 @@ import pytz
 
 def record_log(self, details=""):
 
-    os.chdir(r"C:\Users\EstroniteX\Desktop\New folder\Python")      # r means the string will be treated as raw string
+    os.chdir(os.path.expanduser("~/Desktop"))     # r means the string will be treated as raw string
                                                                     # r"C:\a\foo"
                                                                     #  "C:/a/foo"
     with open(f"log{self.id}.csv", "a", newline='') as csv_file:    #add newline='' in order to eliminate linebreak for every written line
